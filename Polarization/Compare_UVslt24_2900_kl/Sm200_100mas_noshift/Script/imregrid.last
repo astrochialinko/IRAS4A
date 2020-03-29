@@ -1,0 +1,12 @@
+taskname           = "imregrid"
+imagename          =  "../Data_images/n1333iras4a_band7_rob0.5_uv24_2900kl_sm200_100mas_noshift_U.image"
+template           =  "../Data_images/n1333iras4a_band7_rob0.5_uv24_2900kl_sm200_100mas_noshift_sub_I.image"
+output             =  "../Data_images/n1333iras4a_B7_uv24_2900kl_sm200_100mas_noshift_U.image"
+asvelocity         =  True
+axes               =  [-1]
+shape              =  [-1]
+interpolation      =  "linear"
+decimate           =  10
+replicate          =  False
+overwrite          =  False
+#imregrid(imagename="../Data_images/n1333iras4a_band7_rob0.5_uv24_2900kl_sm200_100mas_noshift_U.image",template="../Data_images/n1333iras4a_band7_rob0.5_uv24_2900kl_sm200_100mas_noshift_sub_I.image",output="../Data_images/n1333iras4a_B7_uv24_2900kl_sm200_100mas_noshift_U.image",asvelocity=True,axes=[-1],shape=[-1],interpolation="linear",decimate=10,replicate=False,overwrite=False)

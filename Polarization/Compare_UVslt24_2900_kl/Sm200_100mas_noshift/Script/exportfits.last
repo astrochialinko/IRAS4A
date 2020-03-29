@@ -1,0 +1,14 @@
+taskname           = "exportfits"
+imagename          =  "../Data_images/n1333iras4a_B7_uv24_2900kl_sm200_100mas_noshift_Per.image"
+fitsimage          =  "../Data_images/n1333iras4a_B7_uv24_2900kl_sm200_100mas_noshift_Per.image.fits"
+velocity           =  False
+optical            =  False
+bitpix             =  -32
+minpix             =  0
+maxpix             =  -1
+overwrite          =  True
+dropstokes         =  False
+stokeslast         =  True
+history            =  True
+dropdeg            =  False
+#exportfits(imagename="../Data_images/n1333iras4a_B7_uv24_2900kl_sm200_100mas_noshift_Per.image",fitsimage="../Data_images/n1333iras4a_B7_uv24_2900kl_sm200_100mas_noshift_Per.image.fits",velocity=False,optical=False,bitpix=-32,minpix=0,maxpix=-1,overwrite=True,dropstokes=False,stokeslast=True,history=True,dropdeg=False)

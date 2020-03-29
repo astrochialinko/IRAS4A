@@ -1,0 +1,19 @@
+taskname           = "imsmooth"
+imagename          =  "../../Original_data/UV24_2900_kl/n1333iras4a_band7_rob0.5_uv24_2900kl_U.image"
+kernel             =  "gaussian"
+major              =  "0.2arcsec"
+minor              =  "0.1arcsec"
+pa                 =  "0deg"
+targetres          =  True
+kimage             =  ""
+scale              =  -1.0
+region             =  ""
+box                =  ""
+chans              =  ""
+stokes             =  ""
+mask               =  ""
+outfile            =  "../Data_images/n1333iras4a_band7_rob0.5_uv24_2900kl_sm200_100mas_noshift_U.image"
+stretch            =  False
+overwrite          =  False
+beam               =  ""
+#imsmooth(imagename="../../Original_data/UV24_2900_kl/n1333iras4a_band7_rob0.5_uv24_2900kl_U.image",kernel="gaussian",major="0.2arcsec",minor="0.1arcsec",pa="0deg",targetres=True,kimage="",scale=-1.0,region="",box="",chans="",stokes="",mask="",outfile="../Data_images/n1333iras4a_band7_rob0.5_uv24_2900kl_sm200_100mas_noshift_U.image",stretch=False,overwrite=False,beam="")

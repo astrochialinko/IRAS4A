@@ -1,0 +1,16 @@
+taskname           = "immath"
+imagename          =  ['../Data_images/n1333iras4a_B7_uv24_2900kl_sm200_100mas_noshift_PI.image', '../Data_images/n1333iras4a_B7_uv24_2900kl_sm200_100mas_noshift_I.image']
+mode               =  "evalexpr"
+outfile            =  "../Data_images/n1333iras4a_B7_uv24_2900kl_sm200_100mas_noshift_Per.image"
+expr               =  "IM0*100/IM1[IM1>0.00069]"
+varnames           =  ""
+sigma              =  "0.0mJy/beam"
+polithresh         =  ""
+mask               =  ""
+region             =  ""
+box                =  ""
+chans              =  ""
+stokes             =  ""
+stretch            =  False
+imagemd            =  ""
+#immath(imagename=['../Data_images/n1333iras4a_B7_uv24_2900kl_sm200_100mas_noshift_PI.image', '../Data_images/n1333iras4a_B7_uv24_2900kl_sm200_100mas_noshift_I.image'],mode="evalexpr",outfile="../Data_images/n1333iras4a_B7_uv24_2900kl_sm200_100mas_noshift_Per.image",expr="IM0*100/IM1[IM1>0.00069]",varnames="",sigma="0.0mJy/beam",polithresh="",mask="",region="",box="",chans="",stokes="",stretch=False,imagemd="")
