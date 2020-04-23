@@ -1,0 +1,2 @@
+#CRTFv0 CASA Region Text Format version 0
+ellipse [[52.29344689deg, 31.22558251deg], [0.0758arcsec, 0.0581arcsec], 90.00000000deg] coord=ICRS, corr=[I], linewidth=1, linestyle=-, symsize=1, symthick=1, color=green, font=Helvetica, fontsize=11, fontstyle=normal, usetex=false

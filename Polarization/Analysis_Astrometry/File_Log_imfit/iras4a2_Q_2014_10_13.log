@@ -1,0 +1,47 @@
+****** Fit performed at Thu Apr 23 06:22:28 2020******
+
+Input parameters ---
+       --- imagename:           /Users/astrochialinko/Workshop/IRAS4A/Polarization/Analysis_Astrometry/Data_NoSelfCal/Data_NoSelfCal_Rg/n1333iras4a_Q_rob-2_uvAll_2014_10_13_I.image
+       --- region:              
+       --- channel:             0
+       --- stokes:              I
+       --- mask:                
+       --- include pixel range: []
+       --- exclude pixel range: []
+*** Details of fit for channel number 0
+Number of pixels used in fit: 875
+Input and residual image statistics (to be used as a rough guide only as to goodness of fit)
+       --- Standard deviation of input image: 0.000113304 Jy
+       --- Standard deviation of residual image: 9.56123e-06 Jy
+       --- RMS of input image: 0.000846615 Jy
+       --- RMS of residual image: 9.80187e-06 Jy
+
+Fit on n1333iras4a_Q_rob-2_uvAll_2014_10_13_I.image component 0
+Position ---
+       --- ra:    03:29:10.42960 +/- 0.00014 s (0.00184 arcsec along great circle)
+       --- dec: +031.13.32.15433 +/- 0.00186 arcsec
+       --- ra:  258.28 +/- 0.18 pixels
+       --- dec: 265.46 +/- 0.19 pixels
+
+Image component size (convolved with beam) ---
+       --- major axis FWHM:     474.0 +/- 5.2 marcsec
+       --- minor axis FWHM:     372.7 +/- 3.3 marcsec
+       --- position angle: 135.9 +/- 1.5 deg
+
+Clean beam size ---
+       --- major axis FWHM: 0.39 arcsec
+       --- minor axis FWHM: 0.33 arcsec
+       --- position angle: -71.78 deg
+Image component size (deconvolved from beam) ---
+       --- major axis FWHM:     293.5 +/- 10.0 marcsec
+       --- minor axis FWHM:     122.1 +/- 15.9 marcsec
+       --- position angle: 149.4 +/- 3.0 deg
+
+Flux ---
+       --- Integrated:   1.417 +/- 0.022 mJy
+       --- Peak:         1.041 +/- 0.010 mJy/beam
+       --- Polarization: I
+
+Spectrum ---
+      --- frequency:        43.97339 GHz (6.817588 mm)
+

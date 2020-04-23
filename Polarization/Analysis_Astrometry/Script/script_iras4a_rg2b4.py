@@ -18,8 +18,8 @@ import os
 thesteps = []
 step_title = {
                0: 'Create subimages',
-               1: 'Regard images'
-               #1: 'Export FITS images'
+               1: 'Regrid images',
+               2: 'Export FITS images'
               }
 
 try:
@@ -39,8 +39,8 @@ if (thesteps==[]):
 ##### Global paramters and keywords ######################
 outnames = [
             'n1333iras4ab_Qband_rob-2_uvAll_th20uJy_interact_2014Oct13_noselfcal',
-            'n1333iras4ab_Kband_rob-2_uvAll_th8uJy_cell0d01_interact_2016Aug06_noselfcal',
             'n1333iras4ab_Kband_rob-2_uvAll_th8uJy_cell0d01_interact_2016Jun04_noselfcal',
+            'n1333iras4ab_Kband_rob-2_uvAll_th8uJy_cell0d01_interact_2016Aug06_noselfcal',
             'n1333iras4ab_Kaband_rob-2_uvAll_th15uJy_interact_cell0d01_noselfcal',
             'n1333iras4a_band7_rob-2_uvAll_th270uJy_hogbom_interact',
             'n1333iras4a_band6_rob-2_uvAll_th30uJy_cell0d02_interact',
@@ -133,19 +133,19 @@ os.system(command)
 
 
 
-'''
+
 ##### Export FITS images ################################
-mystep = 1
+mystep = 2
 if(mystep in thesteps):
   casalog.post('Step '+str(mystep)+' '+step_title[mystep],'INFO')
   print 'Step ', mystep, step_title[mystep]
 
-  for outname in outnames:
+  for new_outname in new_outnames:
     stokes = 'I'
-    RgSmIimagename = '%s%s_%s_%s_%s.image'%(path_new, outname, smooth, regrid, stokes)
+    RgIimagename   = '%s%s_%s.image'%(path_new, new_outname, stokes)
   
     outimages = [
-                  RgSmIimagename
+                  RgIimagename
                   ]
 
     for outcasaimage in outimages:
@@ -156,5 +156,5 @@ if(mystep in thesteps):
                 )
 
 #########################################################
-'''
+
 
