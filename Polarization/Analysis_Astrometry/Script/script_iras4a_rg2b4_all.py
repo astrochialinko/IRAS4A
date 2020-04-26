@@ -1,10 +1,11 @@
 ###########################################################
-# 2020.Apr.22
+# 2020.Apr.26
 # Using CASA version 5.4.0
 #
 # Purpose:
-#     Regrid VLA K, Ka, Q, and ALMA band 6 images onto
-#     ALMA band 7 image (new coordinate)
+#     Regrid VLA K, Ka, Q, and ALMA band 6 images 
+#     and other archive data
+#     onto ALMA band 7 image (new coordinate)
 #     towards NGC1333 IRAS4A.
 #   
 # Editor:
@@ -59,10 +60,33 @@ new_outnames = [
                 'n1333iras4a_2019_07_20_B4_Lai',
                 ]
 
+outnames_arc = [
+                'n1333iras4a_Ka_archive_2013Oct21_Tobin',
+                'n1333iras4a_Ka_archive_2014Feb24_Tobin',
+                'n1333iras4a_band4_archive_2018Oct16_Francesco',
+                'n1333iras4a_band6_archive_2015Jun13_Sakai',
+                'n1333iras4a_band6_archive_2015Sep27_Tobin',
+                'n1333iras4a_band6_archive_2017Aug28_Maury',
+                'n1333iras4a_band6_archive_2017Dec17_Tobin',
+                'n1333iras4a_band7_archive_2016Dec14_Su',
+                'n1333iras4a_band7_archive_2016Jul23_Su'
+                ]
+
+new_outnames_arc = [
+                     'n1333iras4a_2013_10_21_Ka_Tobin',
+                     'n1333iras4a_2014_02_24_Ka_Tobin',
+                     'n1333iras4a_2018_10_16_B4_Francesco',
+                     'n1333iras4a_2015_06_13_B6_Sakai',
+                     'n1333iras4a_2015_09_27_B6_Tobin',
+                     'n1333iras4a_2017_08_28_B6_Maury',
+                     'n1333iras4a_2017_12_17_B6_Tobin',
+                     'n1333iras4a_2016_12_14_B7_Su',
+                     'n1333iras4a_2016_07_23_B7_Su'
+                    ]
 outname_temp = 'n1333iras4a_band4_rob-2_uvAll_th10uJy_hogbom_mask_cell0d01'
 
-
 path_old    = '../Data_NoSelfCal/Original_NoSelfCal/'
+path_arc    = '../Data_NoSelfCal/Original_archive/'
 path_new    = '../Data_NoSelfCal/Data_NoSelfCal_Rg/'
 path_temp   = '../Data_NoSelfCal/Original_NoSelfCal/'
 
@@ -125,9 +149,31 @@ if(mystep in thesteps):
               output=RgIimagename
               )
 
+  # regrid the Archive data
+  for i, outname_arc in enumerate(outnames_arc):
+    new_outname_arc = new_outnames_arc[i]
+
+    stokes         = 'I'
+    Iimagename     = '%s%s_%s.image'%(path_arc, outname_arc, stokes)
+    RgIimagename   = '%s%s_%s.image'%(path_new, new_outname_arc, stokes)
+    TempIimagename = '%s%s_sub_%s.image'%(path_new, outname_temp, stokes)
+
+
+    # regrid the I image
+    command = 'rm -rf ' + RgIimagename
+    os.system(command)
+
+    imregrid(
+              imagename=Iimagename,
+              template=TempIimagename,
+              output=RgIimagename
+              )
+
+
 # delete the subimage
 command = 'rm -rf ' + TempIimagename
 os.system(command)
+
 
 ##########################################################
 
@@ -145,6 +191,23 @@ if(mystep in thesteps):
     stokes = 'I'
     RgIimagename   = '%s%s_%s.image'%(path_new, new_outname, stokes)
   
+    outimages = [
+                  RgIimagename
+                  ]
+
+    for outcasaimage in outimages:
+      exportfits(
+                 imagename = outcasaimage,
+                 fitsimage = outcasaimage+'.fits',
+                 overwrite = True
+                )
+
+
+  # export archive images
+  for new_outname_arc in new_outnames_arc:
+    stokes = 'I'
+    RgIimagename   = '%s%s_%s.image'%(path_new, new_outname_arc, stokes)
+
     outimages = [
                   RgIimagename
                   ]

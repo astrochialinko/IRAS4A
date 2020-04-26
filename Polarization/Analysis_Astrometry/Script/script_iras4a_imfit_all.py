@@ -1,10 +1,10 @@
 ###########################################################
-# 2020.Apr.22
+# 2020.Apr.26
 # Using CASA version 5.4.0
 #
 # Purpose:
 #     Fit 2D elliptical Gaussian components on
-#     JVLA K, Ka, Q, and ALMA B6, B7 images
+#     JVLA K, Ka, Q, and ALMA B3, B4, B6, B7 images
 #     towards NGC1333 IRAS4A.
 #   
 # Editor:
@@ -34,26 +34,43 @@ if (thesteps==[]):
 
 
 ##### Global paramters and keywords ######################
-
 outnames  = [
+            'n1333iras4a_2013_10_21_Ka_Tobin',
+            'n1333iras4a_2014_02_24_Ka_Tobin',
             'n1333iras4a_2014_10_13_Q_Liu',
+            'n1333iras4a_2015_06_13_B6_Sakai',
+            'n1333iras4a_2015_09_27_B6_Tobin',
             'n1333iras4a_2016_06_04_K_Liu',
+            'n1333iras4a_2016_07_23_B7_Su',
             'n1333iras4a_2016_08_06_K_Liu',
             'n1333iras4a_2016_09_04_Ka_Liu',
             'n1333iras4a_2016_09_06_B7_Lai',
             'n1333iras4a_2016_11_04_B6_Tao',
+            'n1333iras4a_2016_12_14_B7_Su',
             'n1333iras4a_2017_08_17_B3_Cox',
+            'n1333iras4a_2017_08_28_B6_Maury',
+            'n1333iras4a_2017_12_17_B6_Tobin',
+            'n1333iras4a_2018_10_16_B4_Francesco',
             'n1333iras4a_2019_07_20_B4_Lai',
              ]
 
 new_outnames = [
+                'iras4a2_2013_10_21_Ka_Tobin',
+                'iras4a2_2014_02_24_Ka_Tobin',
                 'iras4a2_2014_10_13_Q_Liu',
+                'iras4a2_2015_06_13_B6_Sakai',
+                'iras4a2_2015_09_27_B6_Tobin',
                 'iras4a2_2016_06_04_K_Liu',
+                'iras4a2_2016_07_23_B7_Su',
                 'iras4a2_2016_08_06_K_Liu',
                 'iras4a2_2016_09_04_Ka_Liu',
                 'iras4a2_2016_09_06_B7_Lai',
                 'iras4a2_2016_11_04_B6_Tao',
+                'iras4a2_2016_12_14_B7_Su',
                 'iras4a2_2017_08_17_B3_Cox',
+                'iras4a2_2017_08_28_B6_Maury',
+                'iras4a2_2017_12_17_B6_Tobin',
+                'iras4a2_2018_10_16_B4_Francesco',
                 'iras4a2_2019_07_20_B4_Lai',
                  ]
 

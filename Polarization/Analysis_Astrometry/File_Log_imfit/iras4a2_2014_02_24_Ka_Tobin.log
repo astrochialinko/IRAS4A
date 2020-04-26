@@ -1,0 +1,47 @@
+****** Fit performed at Sun Apr 26 11:05:38 2020******
+
+Input parameters ---
+       --- imagename:           /Users/astrochialinko/Workshop/IRAS4A/Polarization/Analysis_Astrometry/Data_NoSelfCal/Data_NoSelfCal_Rg/n1333iras4a_2014_02_24_Ka_Tobin_I.image
+       --- region:              
+       --- channel:             0
+       --- stokes:              I
+       --- mask:                
+       --- include pixel range: []
+       --- exclude pixel range: []
+*** Details of fit for channel number 0
+Number of pixels used in fit: 24
+Input and residual image statistics (to be used as a rough guide only as to goodness of fit)
+       --- Standard deviation of input image: 3.83735e-05 Jy
+       --- Standard deviation of residual image: 6.68038e-06 Jy
+       --- RMS of input image: 0.00024227 Jy
+       --- RMS of residual image: 7.18878e-06 Jy
+
+Fit on n1333iras4a_2014_02_24_Ka_Tobin_I.image component 0
+Position ---
+       --- ra:    03:29:10.426359 +/- 0.000057 s (0.000736 arcsec along great circle)
+       --- dec: +031.13.32.103306 +/- 0.000585 arcsec
+       --- ra:  262.432 +/- 0.074 pixels
+       --- dec: 260.354 +/- 0.059 pixels
+
+Image component size (convolved with beam) ---
+       --- major axis FWHM:     67.3 +/- 1.7 marcsec
+       --- minor axis FWHM:     58.8 +/- 1.4 marcsec
+       --- position angle: 78.3 +/- 6.9 deg
+
+Clean beam size ---
+       --- major axis FWHM: 0.06 arcsec
+       --- minor axis FWHM: 0.05 arcsec
+       --- position angle: 83.42 deg
+Image component size (deconvolved from beam) ---
+       --- major axis FWHM:     36.2 +/- 3.4 marcsec
+       --- minor axis FWHM:     22.1 +/- 8.3 marcsec
+       --- position angle: 0.2 +/- 17.9 deg
+
+Flux ---
+       --- Integrated:   415 +/- 16 uJy
+       --- Peak:         309.6 +/- 7.6 uJy/beam
+       --- Polarization: I
+
+Spectrum ---
+      --- frequency:        36.89901 GHz (8.124676 mm)
+
