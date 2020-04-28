@@ -1,0 +1,34 @@
+# Statistics calculated using Classic algorithm
+# Regions --- 
+#          -- bottom-left corner (pixel) [blc]:  [250, 256, 0, 0]
+#          -- top-right corner (pixel) [trc]:    [261, 268, 0, 0]
+#          -- bottom-left corner (world) [blcf]: 03:29:10.4361, +31.13.32.0598, 2.54581e+11Hz, I
+#          -- top-right corner (world) [trcf]:   03:29:10.4275, +31.13.32.1798, 2.54581e+11Hz, I
+# Values --- 
+#          -- flux density [flux]:                    0.0123569 Jy
+#          -- number of points [npts]:                119
+#          -- maximum value [max]:                    0.278712 Jy/beam
+#          -- minimum value [min]:                    0.261327 Jy/beam
+#          -- position of max value (pixel) [maxpos]: [255, 262, 0, 0]
+#          -- position of min value (pixel) [minpos]: [250, 264, 0, 0]
+#          -- position of max value (world) [maxposf]: 03:29:10.4322, +31.13.32.1198, 2.54581e+11Hz, I
+#          -- position of min value (world) [minposf]: 03:29:10.4361, +31.13.32.1398, 2.54581e+11Hz, I
+#          -- Sum of pixel values [sum]:               32.2036 Jy/beam
+#          -- Sum of squared pixel values [sumsq]:     8.71657 Jy/beam.Jy/beam
+# Statistics --- 
+#         -- Mean of the pixel values [mean]:         0.270619 Jy/beam
+#         -- Variance of the pixel values :           1.42062e-05 Jy/beam
+#         -- Standard deviation of the Mean [sigma]:  0.00376911 Jy/beam
+#         -- Root mean square [rms]:                  0.270645 Jy/beam
+#         -- Median of the pixel values [median]:     0.27072 Jy/beam
+#         -- Median of the deviations [medabsdevmed]: 0.00274462 Jy/beam
+#         -- IQR [quartile]:                          0.00530952 Jy/beam
+#         -- First quartile [q1]:                     0.267958 Jy/beam
+#         -- Third quartile [q3]:                     0.273268 Jy/beam
+#Sum column unit = Jy/beam
+#Mean column unit = Jy/beam
+#Std_dev column unit = Jy/beam
+#Minimum column unit = Jy/beam
+#Maximum column unit = Jy/beam
+#Npts          Sum           Mean          Rms           Std_dev       Minimum       Maximum     
+  1.190000e+02  3.220361e+01  2.706186e-01  2.706446e-01  3.769111e-03  2.613273e-01  2.787122e-01

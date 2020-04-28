@@ -1,0 +1,34 @@
+# Statistics calculated using Classic algorithm
+# Regions --- 
+#          -- bottom-left corner (pixel) [blc]:  [254, 254, 0, 0]
+#          -- top-right corner (pixel) [trc]:    [269, 269, 0, 0]
+#          -- bottom-left corner (world) [blcf]: 03:29:10.4329, +31.13.32.0398, 3.6771e+10Hz, I
+#          -- top-right corner (world) [trcf]:   03:29:10.4212, +31.13.32.1898, 3.6771e+10Hz, I
+# Values --- 
+#          -- flux density [flux]:                    0.000303865 Jy
+#          -- number of points [npts]:                195
+#          -- maximum value [max]:                    0.000567317 Jy/beam
+#          -- minimum value [min]:                    0.000328679 Jy/beam
+#          -- position of max value (pixel) [maxpos]: [262, 262, 0, 0]
+#          -- position of min value (pixel) [minpos]: [255, 266, 0, 0]
+#          -- position of max value (world) [maxposf]: 03:29:10.4267, +31.13.32.1198, 3.6771e+10Hz, I
+#          -- position of min value (world) [minposf]: 03:29:10.4322, +31.13.32.1598, 3.6771e+10Hz, I
+#          -- Sum of pixel values [sum]:               0.0863285 Jy/beam
+#          -- Sum of squared pixel values [sumsq]:     3.9084e-05 Jy/beam.Jy/beam
+# Statistics --- 
+#         -- Mean of the pixel values [mean]:         0.00044271 Jy/beam
+#         -- Variance of the pixel values :           4.46093e-09 Jy/beam
+#         -- Standard deviation of the Mean [sigma]:  6.67902e-05 Jy/beam
+#         -- Root mean square [rms]:                  0.000447695 Jy/beam
+#         -- Median of the pixel values [median]:     0.000438389 Jy/beam
+#         -- Median of the deviations [medabsdevmed]: 5.53166e-05 Jy/beam
+#         -- IQR [quartile]:                          0.00011236 Jy/beam
+#         -- First quartile [q1]:                     0.000385531 Jy/beam
+#         -- Third quartile [q3]:                     0.000497891 Jy/beam
+#Sum column unit = Jy/beam
+#Mean column unit = Jy/beam
+#Std_dev column unit = Jy/beam
+#Minimum column unit = Jy/beam
+#Maximum column unit = Jy/beam
+#Npts          Sum           Mean          Rms           Std_dev       Minimum       Maximum     
+  1.950000e+02  8.632853e-02  4.427104e-04  4.476947e-04  6.679019e-05  3.286790e-04  5.673172e-04
